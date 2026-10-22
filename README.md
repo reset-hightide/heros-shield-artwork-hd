@@ -37,7 +37,7 @@ O Hylian Shield já ganhou versões 3D lindas em outros mods, como o Art Plus do
 |:-:|---|---|
 | **01** | 🛡️ **Hero's Shield Artwork HD** | O escudo novo, frente e costas. Os arquivos 3D (`.glb` e `.blend`) estão na pasta [`3d/`](3d). |
 | **02** | 🧝 **HW Young Link HD** | O Young Link de Hyrule Warriors do mod do **PxExYxTxOxN** para o Ship of Harkinian, portado para o Recomp. Usa o esqueleto e as animações do próprio jogo. |
-| **03** | ⚔️ **Equipamento do Art Plus** | Vem junto com o Link: a Kokiri Sword (usada também como Razor Sword), a bainha nas costas e a Ocarina of Time, com brilho de metal. Na defesa, a espada fica num ângulo que não atravessa o escudo. |
+| **03** | ⚔️ **Equipamento do Art Plus** | Vem junto com o Link: a Kokiri Sword, cujo modelo também aparece na Razor Sword (a Razor equipada tem o mesmo visual da Kokiri), a bainha nas costas e a Ocarina of Time, com brilho de metal. Na defesa, a espada fica num ângulo que não atravessa o escudo. |
 | **04** | 🩸 **Hero's Shield Aftermath** | O mesmo escudo, gasto: cortes de lâmina no esmalte, a Triforce rachada e as costas marcadas. Veja a história abaixo. |
 
 Dá para usar só o escudo, só o Link ou tudo junto. A escolha é feita no menu do Player Model Manager, que abre com **L + A** no jogo.
@@ -96,7 +96,7 @@ The Hylian Shield has already had beautiful 3D remakes in other mods, like Skila
 |:-:|---|---|
 | **01** | 🛡️ **Hero's Shield Artwork HD** | The new shield, front and back. The 3D files (`.glb` and `.blend`) are in the [`3d/`](3d) folder. |
 | **02** | 🧝 **HW Young Link HD** | The Hyrule Warriors Young Link from **PxExYxTxOxN**'s Ship of Harkinian mod, ported to the Recomp. It uses the game's own skeleton and animations. |
-| **03** | ⚔️ **Art Plus gear** | Comes with Link: the Kokiri Sword (also used as the Razor Sword), the sheath on his back and the Ocarina of Time, with a metal shine. When defending, the sword is angled so it doesn't go through the shield. |
+| **03** | ⚔️ **Art Plus gear** | Comes with Link: the Kokiri Sword, whose model also shows up on the Razor Sword (an equipped Razor looks the same as the Kokiri), the sheath on his back and the Ocarina of Time, with a metal shine. When defending, the sword is angled so it doesn't go through the shield. |
 | **04** | 🩸 **Hero's Shield Aftermath** | The same shield, worn down: blade cuts in the enamel, a cracked Triforce and a scarred back. See the story below. |
 
 You can use just the shield, just Link, or everything. You pick them in the Player Model Manager menu, opened in game with **L + A**.
