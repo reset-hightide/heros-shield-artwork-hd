@@ -131,6 +131,7 @@ footer { padding: 40px 0 60px; color: var(--muted); font-size: 14px; text-align:
 .ba .lab { position: absolute; bottom: 10px; padding: 4px 10px; border-radius: 999px; font: 700 12px Inter, sans-serif; background: rgba(11,8,22,.75); pointer-events: none; }
 .ba .lab.l { left: 10px; color: var(--muted); }
 .ba .lab.r { right: 10px; color: var(--gold2); }
+.ba.wide { aspect-ratio: 16 / 9; }
 .pickpanel[hidden] { display: none; }
 .ba-static { margin: 0; aspect-ratio: 1; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: radial-gradient(circle at 50% 45%, #2a2150, #151027 70%); position: relative; }
 .ba-static img { width: 100%; height: 100%; object-fit: contain; display: block; }
@@ -291,10 +292,7 @@ body.intro-lock { overflow: hidden; }
       <button type="button" role="tab" data-pick="shield" aria-selected="false">🛡️ Hero's Shield</button>
     </div>
     <div class="pickpanel" data-pick="link">
-      <div class="duo">
-        <figure class="ba" data-a="assets/cmp/link_front_n64.jpg" data-b="assets/cmp/link_front_hd.jpg"></figure>
-        <figure class="ba" data-a="assets/cmp/link_back_n64.jpg" data-b="assets/cmp/link_back_hd.jpg"></figure>
-      </div>
+      <figure class="ba wide" data-a="assets/cmp/torre_n64.jpg" data-b="assets/cmp/torre_artwork.jpg" data-la="Link N64" data-lb="HW Young Link HD"></figure>
       <p class="pt">Baseado no Young Link de <b>Hyrule Warriors</b>: rosto, cabelo, túnica e cinto em HD, do mod do PxExYxTxOxN, portado para o Recomp com o esqueleto e as animações do próprio jogo.</p>
       <p class="en">Based on the <b>Hyrule Warriors</b> Young Link: HD face, hair, tunic and belt, from PxExYxTxOxN's mod, ported to the Recomp on the game's own skeleton and animations.</p>
     </div>
@@ -308,7 +306,7 @@ body.intro-lock { overflow: hidden; }
     </div>
     <div class="pickpanel" data-pick="shield" hidden>
       <div class="duo">
-        <figure class="ba" data-a="assets/cmp/shield_front_n64.jpg" data-b="assets/cmp/shield_front_hd.jpg"></figure>
+        <figure class="ba" data-a="assets/cmp/detalhe_n64.jpg" data-b="assets/cmp/detalhe_artwork.jpg" data-la="N64" data-lb="Artwork HD"></figure>
         <figure class="ba-static"><img src="assets/heros_shield_back.png" alt="Back of the Hero's Shield Artwork HD" loading="lazy"><figcaption><span class="pt">Costas: madeira, alça de couro e a Song of Time</span><span class="en">Back: wood, leather strap and the Song of Time</span></figcaption></figure>
       </div>
       <p class="pt">O Hero's Shield reconstruído da arte oficial: relevo de prata e ouro na frente, e atrás <b>madeira, faixas de metal e uma empunhadura de verdade</b> que o Link segura.</p>
@@ -333,8 +331,8 @@ body.intro-lock { overflow: hidden; }
 
   <section>
     <h2 class="pt">O pacote</h2><h2 class="en">The set</h2>
-    <p class="sub pt">Três peças, instaladas de uma vez. Use só o escudo, só o Link ou o conjunto completo (menu <kbd>L</kbd> + <kbd>A</kbd>). O escudo Aftermath, versão gasta do Artwork HD, vem junto (veja mais abaixo).</p>
-    <p class="sub en">Three pieces, installed in one go. Use just the shield, just Link, or the full set (<kbd>L</kbd> + <kbd>A</kbd> menu). The Aftermath shield, a worn version of Artwork HD, comes along (see below).</p>
+    <p class="sub pt">Três peças, instaladas de uma vez. Use só o escudo, só o Link ou o conjunto completo (menu <kbd>L</kbd> + <kbd>A</kbd>). O escudo Aftermath, versão gasta do Artwork HD, e o Hero's Shield N64, o original para comparar, vêm junto (veja mais abaixo).</p>
+    <p class="sub en">Three pieces, installed in one go. Use just the shield, just Link, or the full set (<kbd>L</kbd> + <kbd>A</kbd> menu). The Aftermath shield, a worn version of Artwork HD, and Hero's Shield N64, the original for comparing, come along (see below).</p>
     <div class="grid3">
       <div class="card hero-card"><span class="tag">01 · <span class="pt">NOVO</span><span class="en">NEW</span></span>
         <h3>Hero's Shield Artwork HD</h3>
@@ -391,6 +389,21 @@ body.intro-lock { overflow: hidden; }
       <figure><img src="assets/aftermath_side.png" alt="Aftermath side" loading="lazy"><figcaption class="pt">Lateral</figcaption><figcaption class="en">Side</figcaption></figure>
       <figure><img src="assets/aftermath_back.png" alt="Aftermath back" loading="lazy"><figcaption class="pt">Costas</figcaption><figcaption class="en">Back</figcaption></figure>
     </div>
+  </section>
+
+  <section id="comparison">
+    <h2 class="pt">Os três escudos, lado a lado</h2><h2 class="en">The three shields, side by side</h2>
+    <p class="sub pt">Primeiro Dia, junto à Torre do Relógio, sem o HUD. No N64, o Link e o escudo são os originais do jogo. Arraste a barra para trocar de escudo na mesma cena.</p>
+    <p class="sub en">First Day, by the Clock Tower, no HUD. On N64, Link and the shield are the game's originals. Drag the bar to swap shields in the same scene.</p>
+    <div class="duo">
+      <figure class="ba wide" data-a="assets/cmp/torre_n64.jpg" data-b="assets/cmp/torre_artwork.jpg" data-la="N64" data-lb="Artwork HD"></figure>
+      <figure class="ba wide" data-a="assets/cmp/torre_artwork.jpg" data-b="assets/cmp/torre_aftermath.jpg" data-la="Artwork HD" data-lb="Aftermath"></figure>
+    </div>
+    <div class="duo">
+      <figure class="ba" data-a="assets/cmp/detalhe_n64.jpg" data-b="assets/cmp/detalhe_artwork.jpg" data-la="N64" data-lb="Artwork HD"></figure>
+      <figure class="ba" data-a="assets/cmp/detalhe_artwork.jpg" data-b="assets/cmp/detalhe_aftermath.jpg" data-la="Artwork HD" data-lb="Aftermath"></figure>
+    </div>
+    <figure class="song-fig"><img src="assets/cmp/comparacao_torre.jpg" alt="Hero's Shield N64, Artwork HD and Aftermath by the Clock Tower" loading="lazy"></figure>
   </section>
 
   <section id="install">
@@ -480,8 +493,9 @@ body.intro-lock { overflow: hidden; }
     });
   });
   document.querySelectorAll('.ba').forEach(function (f) {
-    f.innerHTML = '<img alt="N64" loading="lazy" src="' + f.dataset.a + '"><img class="top" alt="HD" loading="lazy" src="' + f.dataset.b + '">' +
-      '<div class="line"></div><div class="knob">⇆</div><span class="lab l">N64</span><span class="lab r">HD</span>';
+    var la = f.dataset.la || 'N64', lb = f.dataset.lb || 'HD';
+    f.innerHTML = '<img alt="' + la + '" loading="lazy" src="' + f.dataset.a + '"><img class="top" alt="' + lb + '" loading="lazy" src="' + f.dataset.b + '">' +
+      '<div class="line"></div><div class="knob">⇆</div><span class="lab l">' + la + '</span><span class="lab r">' + lb + '</span>';
     function move(x) {
       var r = f.getBoundingClientRect();
       var p = Math.max(0, Math.min(1, (x - r.left) / r.width));
