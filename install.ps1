@@ -11,7 +11,7 @@ $ProgressPreference = 'SilentlyContinue'
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 $RepoRaw = 'https://raw.githubusercontent.com/reset-hightide/heros-shield-artwork-hd/main'
-$OurFiles = @('hwmm_young_link_hd.nrm', 'hwmm_young_link_hd_textures.rtz', 'hwmm_heros_shield_hd.nrm', 'hwmm_heros_shield_hd_textures.rtz', 'hwmm_heros_shield_aftermatch_heavy.nrm', 'hwmm_heros_shield_aftermatch_heavy_textures.rtz')
+$OurFiles = @('hwmm_young_link_hd.nrm', 'hwmm_young_link_hd_textures.rtz', 'hwmm_heros_shield_hd.nrm', 'hwmm_heros_shield_hd_textures.rtz', 'hwmm_heros_shield_aftermatch_heavy.nrm', 'hwmm_heros_shield_aftermatch_heavy_textures.rtz', 'hwmm_heros_shield_n64.nrm')
 # Thunderstore packages: namespace, name, version, file that tells us it is already installed
 $Deps = @(
     @('YAZMT', 'YAZMT_Core', '0.1.1', 'yazmt_mm_corelib.nrm'),
