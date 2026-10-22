@@ -1,0 +1,8 @@
+{
+  "pressStart": "assets/intro/press_start.ogg",
+  "song": "assets/intro/song_of_time.mp3",
+  "pressLen": 1250,
+  "songOnsets": [480, 1040, 2040, 2660, 3220, 4300],
+  "songLength": 13140,
+  "dawnBeforeEnd": 4200
+}
