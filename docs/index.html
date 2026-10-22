@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <script data-goatcounter="https://heros-shield-artwork-hd.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hero's Shield Artwork HD</title>
+<meta name="description" content="The Hero's Shield, straight off the official artwork: an HD relief Hero's Shield plus Hyrule Warriors Young Link for Zelda 64: Recompiled (Majora's Mask).">
+<meta property="og:title" content="Hero's Shield Artwork HD — Majora's Mask Recomp">
+<meta property="og:description" content="The Hero's Shield, straight off the official artwork. HD relief, polished silver, gold Triforce. One-click install for Zelda 64: Recompiled.">
+<meta property="og:image" content="https://reset-hightide.github.io/heros-shield-artwork-hd/assets/heros_shield_three_quarter.png">
+<link rel="icon" href="assets/heros_shield_front.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+<style>
+:root {
+  --bg: #0b0816;
+  --bg2: #151027;
+  --card: #1b1532;
+  --line: #2f2752;
+  --text: #ece8f7;
+  --muted: #a9a1c6;
+  --gold: #e8b64c;
+  --gold2: #ffd98a;
+  --red: #e5483d;
+  --blue: #3c72ff;
+  --moon: #ff8a3d;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 16px/1.6 Inter, system-ui, sans-serif;
+  overflow-x: hidden;
+}
+a { color: var(--gold2); }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+.hero > *, .grid3 > *, .gallery > *, .credits > *, ol.steps li { min-width: 0; }
+h1, p, li { overflow-wrap: anywhere; }
+
+/* sky */
+.sky {
+  position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(255,138,61,.28), transparent 60%),
+    radial-gradient(900px 500px at 10% 10%, rgba(91,60,200,.35), transparent 60%),
+    linear-gradient(180deg, #120c26 0%, var(--bg) 60%);
+}
+.stars { position: absolute; inset: 0; background-image:
+  radial-gradient(1.5px 1.5px at 20% 30%, #fff8, transparent),
+  radial-gradient(1px 1px at 70% 20%, #fff9, transparent),
+  radial-gradient(1px 1px at 40% 70%, #fff6, transparent),
+  radial-gradient(1.5px 1.5px at 85% 60%, #fff7, transparent),
+  radial-gradient(1px 1px at 10% 85%, #fff5, transparent),
+  radial-gradient(1px 1px at 55% 45%, #fff6, transparent);
+  background-size: 420px 420px; animation: drift 120s linear infinite; }
+@keyframes drift { to { background-position: 420px 210px; } }
+
+nav { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; gap: 12px; }
+.brand { font-family: Cinzel, serif; font-weight: 800; letter-spacing: .06em; font-size: 15px; color: var(--gold2); text-decoration: none; }
+.lang { display: flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+.lang button { background: none; border: 0; color: var(--muted); padding: 6px 12px; font: 600 13px Inter, sans-serif; cursor: pointer; }
+.lang button[aria-pressed="true"] { background: var(--gold); color: #1a1206; }
+
+/* hero */
+.hero { display: grid; grid-template-columns: 1.05fr 1fr; gap: 24px; align-items: center; padding: 24px 0 40px; }
+.eyebrow { color: var(--moon); font-weight: 700; letter-spacing: .14em; text-transform: uppercase; font-size: 12px; }
+h1 { font-family: Cinzel, serif; font-weight: 800; font-size: clamp(34px, 6vw, 62px); line-height: 1.05; margin: 10px 0 16px;
+  background: linear-gradient(180deg, #fff 0%, var(--gold2) 55%, var(--gold) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.lead { color: var(--muted); font-size: 18px; max-width: 34em; }
+.cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 20px; border-radius: 12px; font-weight: 700; text-decoration: none; border: 1px solid var(--line); color: var(--text); background: var(--card); }
+.btn.primary { background: linear-gradient(180deg, var(--gold2), var(--gold)); color: #1a1206; border: 0; box-shadow: 0 8px 30px rgba(232,182,76,.35); }
+.btn:hover { transform: translateY(-1px); }
+.viewer { position: relative; aspect-ratio: 1; border-radius: 24px; overflow: hidden;
+  background: radial-gradient(closest-side, rgba(60,114,255,.25), transparent 75%), radial-gradient(circle at 50% 60%, #241b45, #120d24 70%);
+  border: 1px solid var(--line); }
+model-viewer { width: 100%; height: 100%; --poster-color: transparent; }
+.hint { position: absolute; bottom: 12px; left: 0; right: 0; text-align: center; color: var(--muted); font-size: 13px; pointer-events: none; }
+
+section { padding: 48px 0; }
+h2 { font-family: Cinzel, serif; font-size: clamp(26px, 4vw, 36px); margin: 0 0 8px; color: var(--gold2); }
+.sub { color: var(--muted); margin: 0 0 28px; }
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px; }
+.hero-card { border-color: var(--gold); box-shadow: 0 0 0 1px rgba(232,182,76,.25), 0 10px 40px rgba(232,182,76,.12); }
+.card h3 { margin: 0 0 6px; font-size: 18px; }
+.card p { margin: 0; color: var(--muted); }
+.tag { display: inline-block; font-size: 12px; font-weight: 700; padding: 3px 9px; border-radius: 999px; background: #2a2150; color: var(--gold2); margin-bottom: 10px; }
+
+.gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.gallery figure { margin: 0; background: radial-gradient(circle at 50% 45%, #2a2150, #151027 70%); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+.gallery img { width: 100%; display: block; aspect-ratio: 1; object-fit: contain; }
+.gallery figcaption { font-size: 13px; color: var(--muted); padding: 8px 12px; }
+
+ol.steps { counter-reset: s; list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+ol.steps li { counter-increment: s; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 16px 16px 60px; position: relative; }
+ol.steps li::before { content: counter(s); position: absolute; left: 16px; top: 14px; width: 30px; height: 30px; border-radius: 50%; background: var(--gold); color: #1a1206; font-weight: 800; display: grid; place-items: center; }
+code { background: #0f0b1f; border: 1px solid var(--line); padding: 1px 6px; border-radius: 6px; font-size: 14px; word-break: break-all; }
+kbd { background: #2a2150; border: 1px solid var(--line); border-bottom-width: 3px; border-radius: 6px; padding: 0 6px; font: 700 13px Inter, sans-serif; }
+
+.credits { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 24px; }
+.credits div { border-bottom: 1px solid var(--line); padding: 10px 0; }
+.credits b { color: var(--text); }
+.credits span { color: var(--muted); }
+footer { padding: 40px 0 60px; color: var(--muted); font-size: 14px; text-align: center; }
+
+
+.tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.tabs button { background: var(--card); color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 9px 16px; font: 700 14px Inter, sans-serif; cursor: pointer; }
+.tabs button[aria-selected="true"] { background: var(--gold); color: #1a1206; border-color: var(--gold); }
+.panel[hidden] { display: none; }
+.btn.small { padding: 9px 14px; margin-top: 10px; font-size: 14px; }
+.cmd { display: flex; gap: 8px; align-items: stretch; margin-top: 10px; }
+.cmd code { flex: 1; min-width: 0; display: block; padding: 10px 12px; font-size: 13px; }
+.cmd .copy { background: #2a2150; color: var(--gold2); border: 1px solid var(--line); border-radius: 8px; font: 700 13px Inter, sans-serif; padding: 0 12px; cursor: pointer; white-space: nowrap; }
+.os { color: var(--muted); font-size: 14px; letter-spacing: .04em; margin: 14px 0 0; }
+.maker { font-size: 20px; margin: 0 0 18px; }
+.maker a { color: var(--gold2); text-decoration: none; }
+.alt { color: var(--muted); margin: 18px 0 0; }
+.done { margin-top: 20px; font-size: 17px; }
+
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
+.ba { position: relative; margin: 0; aspect-ratio: 1; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: #000; touch-action: pan-y; user-select: none; cursor: ew-resize; }
+.ba img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+.ba .top { clip-path: inset(0 0 0 var(--cut, 50%)); }
+.ba .line { position: absolute; top: 0; bottom: 0; left: var(--cut, 50%); width: 3px; margin-left: -1.5px; background: var(--gold); box-shadow: 0 0 12px rgba(0,0,0,.6); pointer-events: none; }
+.ba .knob { position: absolute; top: 50%; left: var(--cut, 50%); width: 40px; height: 40px; margin: -20px 0 0 -20px; border-radius: 50%; background: var(--gold); color: #1a1206; display: grid; place-items: center; font-weight: 800; pointer-events: none; box-shadow: 0 4px 16px rgba(0,0,0,.5); }
+.ba .lab { position: absolute; bottom: 10px; padding: 4px 10px; border-radius: 999px; font: 700 12px Inter, sans-serif; background: rgba(11,8,22,.75); pointer-events: none; }
+.ba .lab.l { left: 10px; color: var(--muted); }
+.ba .lab.r { right: 10px; color: var(--gold2); }
+.pickpanel[hidden] { display: none; }
+.ba-static { margin: 0; aspect-ratio: 1; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: radial-gradient(circle at 50% 45%, #2a2150, #151027 70%); position: relative; }
+.ba-static img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.ba-static figcaption { position: absolute; left: 10px; bottom: 10px; right: 10px; font: 600 12px Inter, sans-serif; color: var(--gold2); }
+.pickpanel p { color: var(--muted); max-width: 52em; }
+@media (max-width: 860px) { .duo { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---- opening: PRESS START + Song of Time carved in metal (after the user's reference photo) ---- */
+body.intro-lock { overflow: hidden; }
+#intro { position: fixed; inset: 0; z-index: 100; background: #07050d; display: grid; place-items: center;
+  padding: max(16px, env(safe-area-inset-left, 0px)); transition: opacity .9s ease; }
+#intro.intro-out { opacity: 0; pointer-events: none; }
+#intro[hidden], .intro-plate[hidden] { display: none; }
+.intro-press { text-align: center; display: grid; gap: 18px; justify-items: center; transition: opacity .6s ease; }
+#intro.intro-playing .intro-press { opacity: 0; pointer-events: none; }
+.intro-eyebrow { margin: 0; color: #c06a2b; letter-spacing: .3em; text-transform: uppercase; font: 700 12px Inter, sans-serif; }
+.intro-title { margin: 0; font: 800 clamp(34px, 7vw, 64px)/1.05 Cinzel, Georgia, serif; color: #f3d48b;
+  text-shadow: 0 0 30px rgba(232,182,76,.35); }
+.intro-start { background: none; border: 0; color: #e5483d; text-shadow: 0 0 14px rgba(229,72,61,.55); font: 800 clamp(20px, 3.5vw, 28px) Cinzel, Georgia, serif;
+  letter-spacing: .25em; cursor: pointer; padding: 12px 18px; animation: blink 1.4s ease-in-out infinite; }
+.intro-start:focus-visible { outline: 2px solid #f3d48b; outline-offset: 4px; }
+@keyframes blink { 50% { opacity: .25; } }
+.intro-hint { margin: 0; color: #8d84ad; font-size: 13px; }
+.intro-stage { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: none; }
+.intro-plate { width: min(92vw, 860px); aspect-ratio: 1080 / 380; opacity: 0; transform: scale(.96);
+  transition: opacity .8s ease, transform 1.2s ease;
+  border-radius: 6px; box-shadow: inset 0 2px 0 rgba(255,255,255,.35), inset 0 -3px 6px rgba(0,0,0,.45), 0 30px 80px rgba(0,0,0,.6);
+  background:
+    radial-gradient(120% 90% at 20% 10%, rgba(255,255,255,.28), transparent 55%),
+    radial-gradient(60% 50% at 80% 85%, rgba(120,84,48,.28), transparent 70%),
+    radial-gradient(40% 30% at 15% 80%, rgba(92,70,52,.25), transparent 70%),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.05) 0 1px, rgba(0,0,0,.04) 1px 3px),
+    linear-gradient(175deg, #b9b4ac, #8f8a83 45%, #a6a199 70%, #7d7871); }
+
+.intro-plate { position: relative; isolation: isolate; }
+.intro-plate::before, .intro-plate::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: -1; }
+.intro-plate::before { background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='220'><filter id='s'><feTurbulence type='fractalNoise' baseFrequency='.004 .9' numOctaves='3' seed='4'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1.4 -.62'/></filter><rect width='100%' height='100%' filter='url(%23s)'/></svg>") 0 0 / 100% 100%, url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='320'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .5  0 0 0 0 .5  0 0 0 0 .5  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"); mix-blend-mode: overlay; opacity: .9; }
+.intro-plate::after { background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='500' height='300'><filter id='r'><feTurbulence type='fractalNoise' baseFrequency='.012' numOctaves='4' seed='9'/><feColorMatrix values='0 0 0 0 .42  0 0 0 0 .27  0 0 0 0 .16  0 0 0 2.2 -1.25'/></filter><rect width='100%' height='100%' filter='url(%23r)'/></svg>") 0 0 / 100% 100%; mix-blend-mode: multiply; opacity: .85; }
+#intro.intro-carving .intro-plate { opacity: 1; transform: scale(1); }
+#intro-svg { width: 100%; height: 100%; display: block; }
+#intro-svg .groove { fill: #2c2622; }
+#intro-svg .carve { filter: drop-shadow(0 1.6px 0 rgba(255,255,255,.45)) drop-shadow(0 -1px 0 rgba(0,0,0,.35)); }
+#intro-svg .face { fill: rgba(255,255,255,.06); }
+#intro-svg .line { clip-path: inset(0 100% 0 0); transition: clip-path .7s ease-out; }
+#intro-svg .line.in { clip-path: inset(0 0 0 0); }
+#intro-svg .clef { opacity: 0; transition: opacity .6s ease; }
+#intro-svg .clef.in { opacity: 1; }
+#intro-svg .note { opacity: 0; transform: scale(.4); transition: opacity .18s ease, transform .35s cubic-bezier(.2,1.6,.4,1); }
+#intro-svg .note.in { opacity: 1; transform: scale(1); }
+.intro-dawn-text { position: absolute; text-align: center; opacity: 0; transition: opacity 1.2s ease; }
+.intro-dawn-text p { margin: 0; font: 700 clamp(28px, 6vw, 54px)/1.15 Cinzel, Georgia, serif; color: #f6efe0;
+  text-shadow: 0 2px 18px rgba(0,0,0,.8); }
+.intro-dawn-text .intro-hours { margin-top: 14px; font-size: clamp(16px, 3vw, 24px); color: #e8b64c; }
+#intro.intro-dawn .intro-plate { opacity: 0; transition-duration: 1s; }
+#intro.intro-dawn .intro-dawn-text { opacity: 1; }
+#intro.intro-notrans, #intro.intro-notrans * { transition: none !important; }
+.intro-skip { position: absolute; right: max(16px, env(safe-area-inset-right, 0px)); bottom: max(16px, env(safe-area-inset-bottom, 0px));
+  background: rgba(255,255,255,.06); color: #cfc8e6; border: 1px solid #352c5c; border-radius: 999px; padding: 8px 16px;
+  font: 600 13px Inter, sans-serif; cursor: pointer; }
+@media (prefers-reduced-motion: reduce) { .intro-start { animation: none; } }
+
+.song { display: grid; grid-template-columns: 1.1fr 1fr; gap: 28px; align-items: center; }
+.song-fig { margin: 0; border-radius: 18px; overflow: hidden; border: 1px solid var(--line); }
+.song-fig img { display: block; width: 100%; }
+.song blockquote { margin: 0 0 18px; }
+.song blockquote p { margin: 0; font: 700 clamp(20px, 3vw, 28px)/1.3 Cinzel, Georgia, serif; color: var(--text); }
+.song cite { display: block; margin-top: 8px; color: var(--moon); font-style: normal; font-weight: 600; letter-spacing: .04em; }
+.song-text > p { color: var(--muted); max-width: 40em; }
+.song-credit { color: var(--muted); font-size: 14px; }
+.song-credit a { color: var(--gold2); font-weight: 600; }
+.song-hours { font: 700 18px Cinzel, Georgia, serif; color: var(--gold) !important; letter-spacing: .08em; }
+@media (max-width: 860px) { .song { grid-template-columns: minmax(0, 1fr); } }
+[data-lang="en"] .pt, [data-lang="pt"] .en { display: none; }
+
+@media (max-width: 860px) {
+  .hero { grid-template-columns: minmax(0, 1fr); }
+  .lead { font-size: 16px; }
+  .grid3 { grid-template-columns: minmax(0, 1fr); }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+  .credits { grid-template-columns: minmax(0, 1fr); }
+}
+/* desktop: smaller intro plate and text (mobile unchanged) */
+@media (min-width: 861px) { .intro-plate { width: min(44vw, 540px); } .intro-dawn-text p { font-size: clamp(24px, 2.6vw, 38px); } .intro-dawn-text .intro-hours { font-size: clamp(14px, 1.5vw, 20px); } }
+/* feedback form */
+.fbk { max-width: 720px; }
+.fbk form { display: grid; gap: 12px; }
+.fbk label { display: grid; gap: 6px; font: 700 12px Inter, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.fbk input, .fbk select, .fbk textarea { font: 400 16px Inter, sans-serif; color: var(--text); background: var(--bg2); border: 1px solid var(--line); border-radius: 10px; padding: 11px 12px; width: 100%; letter-spacing: 0; text-transform: none; }
+.fbk textarea { min-height: 120px; resize: vertical; }
+.fbk input:focus-visible, .fbk select:focus-visible, .fbk textarea:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
+.fbk .fbrow { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.fbk .fbbtns { display: flex; flex-wrap: wrap; gap: 12px; }
+.fbk button { cursor: pointer; font: 700 16px Inter, sans-serif; }
+.fbk button:disabled { opacity: .5; cursor: default; }
+.fbk .hp { position: absolute; left: -9999px; }
+.fbk .fbmsg { min-height: 1.4em; color: var(--gold2); margin: 0; }
+@media (max-width: 640px) { .fbk .fbrow { grid-template-columns: minmax(0, 1fr); } }
+</style>
+</head>
+<body data-lang="pt">
+<div id="intro" role="dialog" aria-label="Song of Time">
+  <div class="intro-press">
+    <p class="intro-eyebrow">The Legend of Zelda · Majora's Mask</p>
+    <h2 class="intro-title">Hero's Shield<br>Artwork HD</h2>
+    <button type="button" id="intro-start" class="intro-start">PRESS START</button>
+    <p class="intro-hint"><span class="pt">com som · toque ou clique</span><span class="en">sound on · tap or click</span></p>
+  </div>
+  <div class="intro-stage">
+    <div class="intro-plate"><svg id="intro-svg" aria-hidden="true"></svg></div>
+    <div class="intro-dawn-text">
+      <p class="pt">Amanhecer do<br>Primeiro Dia</p><p class="en">Dawn of<br>the First Day</p>
+      <p class="intro-hours pt">— Restam 72 horas —</p><p class="intro-hours en">— 72 Hours Remain —</p>
+    </div>
+  </div>
+  <button type="button" id="intro-skip" class="intro-skip"><span class="pt">Pular</span><span class="en">Skip</span></button>
+</div>
+<div class="sky"><div class="stars"></div></div>
+
+<div class="wrap">
+  <nav>
+    <a class="brand" href="#">HERO'S SHIELD ARTWORK HD</a>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-set="pt" aria-pressed="true">PT</button>
+      <button type="button" data-set="en" aria-pressed="false">EN</button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <div class="eyebrow">Zelda 64: Recompiled · Majora's Mask</div>
+      <h1>Hero's Shield<br>Artwork HD</h1>
+      <p class="lead pt"><strong>Este mod substitui o modelo do Hero’s Shield por uma versão remodelada em 3D, com acabamento metálico, relevos e costas detalhadas, com a Song of Time gravada no metal. Compatível com The Legend of Zelda: Majora’s Mask Recompiled.</strong><br>A frente foi refeita em relevo a partir da arte oficial, com prata polida, Triforce dourada e esmalte azul e vermelho. O pacote ainda traz o Young Link de Hyrule Warriors, com texturas melhoradas e as proporções do Link clássico do N64, e equipamentos de metal espelhado.</p>
+      <p class="lead en"><strong>This mod replaces the Hero’s Shield model with a redesigned 3D version featuring a metallic finish, raised details and a detailed back with the Song of Time engraved in the metal. Compatible with The Legend of Zelda: Majora’s Mask Recompiled.</strong><br>The front has been rebuilt in relief from the official artwork, with polished silver, a golden Triforce and blue and red enamel. The pack also includes Hyrule Warriors Young Link, with improved textures and the proportions of the classic N64 Link, plus mirror-steel gear.</p>
+      <div class="cta">
+        <a class="btn primary" href="#install">⬇ <span class="pt">Instalar</span><span class="en">Install</span></a>
+        <a class="btn" href="assets/heros_shield_hd.glb" download>◆ <span class="pt">Escudo em 3D (.glb)</span><span class="en">Shield 3D file (.glb)</span></a>
+        <a class="btn" href="https://github.com/reset-hightide/heros-shield-artwork-hd">GitHub</a>
+      </div>
+      <p class="os">Windows · Linux · Steam Deck · macOS</p>
+    </div>
+    <div class="viewer">
+      <model-viewer src="assets/heros_shield_hd.glb" alt="Hero's Shield HD 3D model"
+        camera-controls auto-rotate auto-rotate-delay="0" rotation-per-second="18deg" interaction-prompt="none"
+        environment-image="neutral" exposure="1.15" shadow-intensity="0.6" tone-mapping="aces"
+        camera-orbit="20deg 80deg auto" poster="assets/heros_shield_front.png"></model-viewer>
+      <div class="hint pt">Arraste para girar · pinça para zoom</div>
+      <div class="hint en">Drag to rotate · pinch to zoom</div>
+    </div>
+  </header>
+
+  <section id="compare">
+    <h2 class="pt">Antes × Depois</h2><h2 class="en">Before × After</h2>
+    <p class="sub pt">Prints do próprio jogo com o cenário em HD (MM-Reloaded), mesmo lugar e mesma pose. Arraste a linha: à esquerda o <b>modelo original do N64</b>, à direita o <b>mod</b>.</p>
+    <p class="sub en">Straight from the game with HD scenery (MM-Reloaded), same spot and same pose. Drag the line: left is the <b>original N64 model</b>, right is the <b>mod</b>.</p>
+    <div class="tabs pick" role="tablist">
+      <button type="button" role="tab" data-pick="link" aria-selected="true">🧝 Link</button>
+      <button type="button" role="tab" data-pick="sword" aria-selected="false"><span class="pt">⚔️ Espada + Bainha</span><span class="en">⚔️ Sword + Sheath</span></button>
+      <button type="button" role="tab" data-pick="shield" aria-selected="false">🛡️ Hero's Shield</button>
+    </div>
+    <div class="pickpanel" data-pick="link">
+      <div class="duo">
+        <figure class="ba" data-a="assets/cmp/link_front_n64.jpg" data-b="assets/cmp/link_front_hd.jpg"></figure>
+        <figure class="ba" data-a="assets/cmp/link_back_n64.jpg" data-b="assets/cmp/link_back_hd.jpg"></figure>
+      </div>
+      <p class="pt">Baseado no Young Link de <b>Hyrule Warriors</b>: rosto, cabelo, túnica e cinto em HD, do mod do PxExYxTxOxN, portado para o Recomp com o esqueleto e as animações do próprio jogo.</p>
+      <p class="en">Based on the <b>Hyrule Warriors</b> Young Link: HD face, hair, tunic and belt, from PxExYxTxOxN's mod, ported to the Recomp on the game's own skeleton and animations.</p>
+    </div>
+    <div class="pickpanel" data-pick="sword" hidden>
+      <div class="duo">
+        <figure class="ba" data-a="assets/cmp/sword_n64.jpg" data-b="assets/cmp/sword_hd.jpg"></figure>
+        <figure class="ba" data-a="assets/cmp/sheath_n64.jpg" data-b="assets/cmp/sheath_hd.jpg"></figure>
+      </div>
+      <p class="pt">Lâminas e bainhas com <b>brilho de metal espelhado</b>: o modelo da Kokiri Sword serve para a Kokiri e a Razor, a Master Sword ocupa o lugar da Gilded, e há a bainha nas costas.</p>
+      <p class="en">Blades and sheaths with a <b>mirror-steel shine</b>: the Kokiri Sword model is used for both the Kokiri and Razor swords, the Master Sword replaces the Gilded Sword, and there is the sheath on his back.</p>
+    </div>
+    <div class="pickpanel" data-pick="shield" hidden>
+      <div class="duo">
+        <figure class="ba" data-a="assets/cmp/shield_front_n64.jpg" data-b="assets/cmp/shield_front_hd.jpg"></figure>
+        <figure class="ba-static"><img src="assets/heros_shield_back.png" alt="Back of the Hero's Shield Artwork HD" loading="lazy"><figcaption><span class="pt">Costas: madeira, alça de couro e a Song of Time</span><span class="en">Back: wood, leather strap and the Song of Time</span></figcaption></figure>
+      </div>
+      <p class="pt">O Hero's Shield reconstruído da arte oficial: relevo de prata e ouro na frente, e atrás <b>madeira, faixas de metal e uma empunhadura de verdade</b> que o Link segura.</p>
+      <p class="en">The Hero's Shield rebuilt off the official artwork: silver and gold relief on the front, and on the back <b>wood, metal bands and a real grip</b> that Link actually holds.</p>
+    </div>
+  </section>
+
+  <section id="song" class="song">
+    <figure class="song-fig"><img src="assets/song_closeup.jpg" alt="Song of Time engraved in the shield's metal band" loading="lazy"></figure>
+    <div class="song-text">
+      <blockquote>
+        <p class="pt">“Você encontrou um destino terrível, não foi?”</p>
+        <p class="en">“You've met with a terrible fate, haven't you?”</p>
+        <cite class="pt">— Vendedor de Máscaras Felizes</cite><cite class="en">— Happy Mask Salesman</cite>
+      </blockquote>
+      <h2 class="pt">Detalhe da Song of Time</h2><h2 class="en">Song of Time detail</h2>
+      <p class="pt">Um detalhe gravado no metal do escudo para o herói nunca esquecer o caminho de volta ao Primeiro Dia.</p>
+      <p class="en">A detail engraved in the metal of the shield so the hero never forgets the way back to the First Day.</p>
+      <p class="song-hours"><span class="pt">Restam 72 horas</span><span class="en">72 Hours Remain</span></p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="pt">O pacote</h2><h2 class="en">The set</h2>
+    <p class="sub pt">Três peças, instaladas de uma vez. Use só o escudo, só o Link ou o conjunto completo (menu <kbd>L</kbd> + <kbd>A</kbd>). O escudo Aftermath, versão gasta do Artwork HD, vem junto (veja mais abaixo).</p>
+    <p class="sub en">Three pieces, installed in one go. Use just the shield, just Link, or the full set (<kbd>L</kbd> + <kbd>A</kbd> menu). The Aftermath shield, a worn version of Artwork HD, comes along (see below).</p>
+    <div class="grid3">
+      <div class="card hero-card"><span class="tag">01 · <span class="pt">NOVO</span><span class="en">NEW</span></span>
+        <h3>Hero's Shield Artwork HD</h3>
+        <p class="pt">Frente traçada da arte oficial em relevo de prata e ouro. Costas com madeira, faixas de metal rebitadas, alça de couro costurada e uma empunhadura que o Link segura de verdade. Também disponível em 3D (.glb + .blend).</p>
+        <p class="en">Front traced from the official artwork in silver and gold relief. Back with wood, riveted metal bands, a stitched leather strap and a grip Link actually holds. Also available in 3D (.glb + .blend).</p></div>
+      <div class="card"><span class="tag">02</span>
+        <h3>HW Young Link HD</h3>
+        <p class="pt">Troca o modelo do Link pelo Young Link de Hyrule Warriors em HD, com a espada bem encaixada na mão.</p>
+        <p class="en">Swaps the Link model for the HD Hyrule Warriors Young Link, with the sword seated properly in his hand.</p></div>
+      <div class="card"><span class="tag">03</span>
+        <h3 class="pt">Equipamento de metal espelhado</h3><h3 class="en">Mirror-steel gear</h3>
+        <p class="pt">O modelo refletivo da Kokiri Sword vale para as espadas Kokiri e Razor. A Master Sword ocupa o lugar da Gilded Sword, o Hylian Shield aparece se você não escolher outro Hero's Shield, e há também o Mirror Shield da lua crescente. Tudo com brilho de metal.</p>
+        <p class="en">The reflective Kokiri Sword model is used for both the Kokiri and Razor swords. The Master Sword replaces the Gilded Sword, the Hylian Shield shows up when no other Hero's Shield is picked, and there is also the Crescent Moon Mirror Shield. All with a metal shine.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Hero's Shield HD</h2>
+    <p class="sub pt">Renderizado no Blender a partir do mesmo modelo que vai para o jogo.</p>
+    <p class="sub en">Rendered in Blender from the same model that goes into the game.</p>
+    <div class="gallery">
+      <figure><img src="assets/heros_shield_front.png" alt="Front" loading="lazy"><figcaption class="pt">Frente</figcaption><figcaption class="en">Front</figcaption></figure>
+      <figure><img src="assets/heros_shield_three_quarter.png" alt="Three-quarter" loading="lazy"><figcaption>3/4</figcaption></figure>
+      <figure><img src="assets/heros_shield_side.png" alt="Side" loading="lazy"><figcaption class="pt">Lateral</figcaption><figcaption class="en">Side</figcaption></figure>
+      <figure><img src="assets/heros_shield_back.png" alt="Back" loading="lazy"><figcaption class="pt">Costas</figcaption><figcaption class="en">Back</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="aftermath" class="song">
+    <figure class="song-fig"><img src="assets/aftermath_triforce.jpg" alt="Hero's Shield Aftermath: the split Triforce" loading="lazy"></figure>
+    <div class="song-text">
+      <h2>Hero's Shield Aftermath</h2>
+      <p class="pt">Em Termina, todos esquecem. Quando a Song of Time é tocada, tudo retorna ao início.</p>
+      <p class="en">In Termina, everyone forgets. When the Song of Time is played, everything returns to the beginning.</p>
+      <p class="pt">Este é o Hero's Shield após incontáveis ciclos. Cada marca carrega a lembrança de um golpe que não pôde ser evitado, uma cicatriz que nem mesmo o tempo conseguiu apagar.</p>
+      <p class="en">This is the Hero's Shield after countless cycles. Each mark carries the memory of a blow that could not be avoided, a scar that not even time could erase.</p>
+      <p class="song-credit pt">No menu <kbd>L</kbd> + <kbd>A</kbd>, em <b>Hero's Shield</b>, escolha <b>Hero's Shield Aftermath</b>. Mesmo desenho do Artwork HD, com cortes de lâmina no esmalte, a Triforce rachada e as costas marcadas. A Song of Time continua gravada.</p>
+      <p class="song-credit en">In the <kbd>L</kbd> + <kbd>A</kbd> menu, under <b>Hero's Shield</b>, pick <b>Hero's Shield Aftermath</b>. Same design as Artwork HD, with blade cuts in the enamel, a cracked Triforce and a scarred back. The Song of Time is still engraved.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="viewer" style="max-width: 560px; margin: 0 auto 24px;">
+      <model-viewer src="assets/heros_shield_aftermath.glb" alt="Hero's Shield Aftermath 3D model" loading="lazy"
+        camera-controls auto-rotate auto-rotate-delay="0" rotation-per-second="18deg" interaction-prompt="none"
+        environment-image="neutral" exposure="1.15" shadow-intensity="0.6" tone-mapping="aces"
+        camera-orbit="20deg 80deg auto" poster="assets/aftermath_front.png"></model-viewer>
+      <div class="hint pt">Arraste para girar · pinça para zoom</div>
+      <div class="hint en">Drag to rotate · pinch to zoom</div>
+    </div>
+    <div class="gallery">
+      <figure><img src="assets/aftermath_front.png" alt="Aftermath front" loading="lazy"><figcaption class="pt">Frente</figcaption><figcaption class="en">Front</figcaption></figure>
+      <figure><img src="assets/aftermath_three_quarter.png" alt="Aftermath three-quarter" loading="lazy"><figcaption>3/4</figcaption></figure>
+      <figure><img src="assets/aftermath_side.png" alt="Aftermath side" loading="lazy"><figcaption class="pt">Lateral</figcaption><figcaption class="en">Side</figcaption></figure>
+      <figure><img src="assets/aftermath_back.png" alt="Aftermath back" loading="lazy"><figcaption class="pt">Costas</figcaption><figcaption class="en">Back</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="install">
+    <h2 class="pt">Instalar em 1 minuto</h2><h2 class="en">Install in 1 minute</h2>
+    <p class="sub pt">Tenha o <a href="https://github.com/Zelda64Recomp/Zelda64Recomp/releases/latest">Zelda 64: Recompiled</a> 1.2.2 ou mais novo, instalado e aberto pelo menos uma vez, e feche o jogo. O instalador copia os mods, baixa o Player Model Manager com as dependências e, se você ainda não escolheu outros modelos, já deixa o Link e o escudo selecionados.</p>
+    <p class="sub en">Have <a href="https://github.com/Zelda64Recomp/Zelda64Recomp/releases/latest">Zelda 64: Recompiled</a> 1.2.2 or newer, installed and started at least once, then close it. The installer copies the mods, downloads Player Model Manager with its dependencies and, if you haven't picked other models yet, selects Link and the shield for you.</p>
+    <div class="tabs" role="tablist">
+      <button type="button" role="tab" data-os="win" aria-selected="true">🪟 Windows</button>
+      <button type="button" role="tab" data-os="deck" aria-selected="false">🎮 Steam Deck / Linux</button>
+      <button type="button" role="tab" data-os="mac" aria-selected="false">🍎 macOS</button>
+    </div>
+    <div class="panel" data-os="win">
+      <ol class="steps">
+        <li><span class="pt">Baixe o <b>Heros-Shield-Artwork-HD.zip</b> e extraia.</span><span class="en">Download <b>Heros-Shield-Artwork-HD.zip</b> and extract it.</span>
+          <div><a class="btn primary small" href="https://github.com/reset-hightide/heros-shield-artwork-hd/releases/latest/download/Heros-Shield-Artwork-HD.zip">⬇ Heros-Shield-Artwork-HD.zip</a></div></li>
+        <li><span class="pt">Dê dois cliques em <b>INSTALAR-Windows.bat</b>. Se aparecer "O Windows protegeu o computador": <b>Mais informações → Executar assim mesmo</b>.</span><span class="en">Double-click <b>INSTALAR-Windows.bat</b>. If SmartScreen appears: <b>More info → Run anyway</b>.</span></li>
+      </ol>
+      <p class="alt pt">Ou cole no PowerShell:</p><p class="alt en">Or paste into PowerShell:</p>
+      <div class="cmd"><code>irm https://raw.githubusercontent.com/reset-hightide/heros-shield-artwork-hd/main/install.ps1 | iex</code><button type="button" class="copy">Copiar / Copy</button></div>
+    </div>
+    <div class="panel" data-os="deck" hidden>
+      <ol class="steps">
+        <li><span class="pt">No Steam Deck, entre no <b>Modo Desktop</b> e abra o <b>Konsole</b>.</span><span class="en">On Steam Deck, switch to <b>Desktop Mode</b> and open <b>Konsole</b>.</span></li>
+        <li><span class="pt">Cole isto e aperte Enter:</span><span class="en">Paste this and press Enter:</span>
+          <div class="cmd"><code>curl -fsSL https://raw.githubusercontent.com/reset-hightide/heros-shield-artwork-hd/main/install.sh | sh</code><button type="button" class="copy">Copiar / Copy</button></div></li>
+      </ol>
+    </div>
+    <div class="panel" data-os="mac" hidden>
+      <ol class="steps">
+        <li><span class="pt">Abra o <b>Terminal</b>.</span><span class="en">Open <b>Terminal</b>.</span></li>
+        <li><span class="pt">Cole isto e aperte Enter:</span><span class="en">Paste this and press Enter:</span>
+          <div class="cmd"><code>curl -fsSL https://raw.githubusercontent.com/reset-hightide/heros-shield-artwork-hd/main/install.sh | sh</code><button type="button" class="copy">Copiar / Copy</button></div></li>
+      </ol>
+    </div>
+    <p class="done pt">✨ <b>Pronto!</b> Abra o jogo. Para trocar de modelo: <kbd>L</kbd> + <kbd>A</kbd> (menu do Player Model Manager).</p>
+    <p class="done en">✨ <b>Done!</b> Start the game. To switch models: <kbd>L</kbd> + <kbd>A</kbd> (Player Model Manager menu).</p>
+  </section>
+
+  <section>
+    <h2 class="pt">Créditos</h2><h2 class="en">Credits</h2>
+    <p class="maker"><span class="pt">Mod criado por</span><span class="en">Mod by</span> <a href="https://github.com/reset-hightide"><b>Bruno Gebara</b> (reset-hightide)</a></p>
+    <p class="sub pt">Baseado no trabalho de:</p><p class="sub en">Built on the work of:</p>
+    <div class="credits">
+      <div><b>Nintendo</b> <span class="pt">— Majora’s Mask, designs e arte originais</span><span class="en">— Majora’s Mask, original designs and artwork</span></div>
+      <div><b>Koei Tecmo / Nintendo</b> <span>— Hyrule Warriors</span></div>
+      <div><b>PxExYxTxOxN</b> <span>— <a href="https://gamebanana.com/mods/491210">Hyrule Warriors Link</a> (Ship of Harkinian)</span></div>
+      <div><b>Skilar</b> <span class="pt">— equipamentos Art Plus, metal reflexivo e madeira</span><span class="en">— Art Plus equipment, reflective metal and wood</span></div>
+      <div><b>YAZMT</b> <span>— <a href="https://github.com/YAZ64MT/PlayerModelManager">Player Model Manager</a>, Global Objects, YAZMT Core</span></div>
+      <div><b>LT_Schmiddy</b> <span>— Recomp External Python</span></div>
+      <div><b>@arsenaldehyrule</b> <span>— <a href="https://www.instagram.com/arsenaldehyrule/"><span class="pt">ideia de gravar a Song of Time</span><span class="en">Song of Time engraving idea</span></a></span></div>
+      <div><b>Zelda64Recomp team</b> <span>— <a href="https://github.com/Zelda64Recomp/Zelda64Recomp">Zelda 64: Recompiled</a></span></div>
+    </div>
+  </section>
+
+  <section id="feedback" class="fbk"><h2 class="pt">Sugestões e feedback</h2><h2 class="en">Suggestions and feedback</h2><p class="sub pt">Achou um erro, tem uma ideia ou quer deixar um comentário? Escreva aqui e escolha como enviar: pelo WhatsApp ou por e-mail.</p><p class="sub en">Found a bug, have an idea or just want to leave a comment? Write it here and choose how to send it: by WhatsApp or by e-mail.</p><form id="fbform" novalidate><label><span class="pt">Assunto</span><span class="en">Subject</span><select name="tipo" id="fbtipo"></select></label><label><span class="pt">Mensagem</span><span class="en">Message</span><textarea name="mensagem" id="fbtext" required></textarea></label><div class="fbrow"><label><span class="pt">Nome (opcional)</span><span class="en">Name (optional)</span><input name="nome" autocomplete="name"></label><label><span class="pt">E-mail para resposta (opcional)</span><span class="en">Reply e-mail (optional)</span><input name="email" type="email" autocomplete="email"></label></div><input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true"><div class="fbbtns"><button type="button" class="btn primary" data-via="wa"><span class="pt">Enviar pelo WhatsApp</span><span class="en">Send via WhatsApp</span></button><button type="button" class="btn" data-via="mail"><span class="pt">Enviar por e-mail</span><span class="en">Send by e-mail</span></button></div><p class="fbmsg" id="fbmsg" role="status"></p></form></section>
+  <footer>
+    <span class="pt">Projeto de fã, sem relação com a Nintendo ou a Koei Tecmo. Algum autor original quer mudar ou remover algo? Abra uma issue no GitHub.</span>
+    <span class="en">Fan project, not affiliated with Nintendo or Koei Tecmo. Original author and want something changed or removed? Open an issue on GitHub.</span>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var stored = null;
+  try { stored = localStorage.getItem('lang'); } catch (e) {}
+  var lang = stored || ((navigator.language || '').toLowerCase().startsWith('pt') ? 'pt' : 'en');
+  function set(l) {
+    document.body.dataset.lang = l;
+    document.documentElement.lang = l === 'pt' ? 'pt-BR' : 'en';
+    document.querySelectorAll('.lang button').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.set === l); });
+    try { localStorage.setItem('lang', l); } catch (e) {}
+  }
+  document.querySelectorAll('.lang button').forEach(function (b) { b.addEventListener('click', function () { set(b.dataset.set); }); });
+  function pickOS(os) {
+    document.querySelectorAll('.tabs:not(.pick) button').forEach(function (b) { b.setAttribute('aria-selected', b.dataset.os === os); });
+    document.querySelectorAll('.panel').forEach(function (p) { p.hidden = p.dataset.os !== os; });
+  }
+  document.querySelectorAll('.tabs:not(.pick) button').forEach(function (b) { b.addEventListener('click', function () { pickOS(b.dataset.os); }); });
+  var ua = navigator.userAgent;
+  pickOS(/Mac/.test(ua) && !/iPhone|iPad/.test(ua) ? 'mac' : /Linux|X11/.test(ua) && !/Android/.test(ua) ? 'deck' : 'win');
+  document.querySelectorAll('.copy').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var t = b.parentNode.querySelector('code').textContent;
+      (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(function () {
+        b.textContent = '✓'; setTimeout(function () { b.textContent = 'Copiar / Copy'; }, 1500);
+      }, function () {});
+    });
+  });
+  document.querySelectorAll('.ba').forEach(function (f) {
+    f.innerHTML = '<img alt="N64" loading="lazy" src="' + f.dataset.a + '"><img class="top" alt="HD" loading="lazy" src="' + f.dataset.b + '">' +
+      '<div class="line"></div><div class="knob">⇆</div><span class="lab l">N64</span><span class="lab r">HD</span>';
+    function move(x) {
+      var r = f.getBoundingClientRect();
+      var p = Math.max(0, Math.min(1, (x - r.left) / r.width));
+      f.style.setProperty('--cut', (p * 100) + '%');
+    }
+    var down = false;
+    f.addEventListener('pointerdown', function (ev) { down = true; move(ev.clientX); f.setPointerCapture(ev.pointerId); });
+    f.addEventListener('pointermove', function (ev) { if (down) move(ev.clientX); });
+    f.addEventListener('pointerup', function () { down = false; });
+    f.addEventListener('pointercancel', function () { down = false; });
+  });
+  document.querySelectorAll('.pick button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      document.querySelectorAll('.pick button').forEach(function (x) { x.setAttribute('aria-selected', x === b); });
+      document.querySelectorAll('.pickpanel').forEach(function (p) { p.hidden = p.dataset.pick !== b.dataset.pick; });
+    });
+  });
+  set(lang);
+})();
+</script>
+<script src="intro.js"></script>
+<script>(function () { var f = document.getElementById('fbform'), msg = document.getElementById('fbmsg'), sel = document.getElementById('fbtipo'), ta = document.getElementById('fbtext'); var WA = '5515996666366', MAIL = 'gebara.eng@gmail.com'; var T = { pt: { tipos: ['Sugestão', 'Erro ou problema', 'Elogio', 'Outro comentário'], ph: 'Escreva aqui a sua mensagem...', need: 'Escreva a mensagem antes de enviar.', wa: 'Abrimos o WhatsApp com a mensagem pronta. É só tocar em enviar.', sending: 'Enviando...', ok: 'Obrigado! Sua mensagem foi enviada.', fail: 'Não deu para enviar daqui.', open: 'Abrir no seu app de e-mail' }, en: { tipos: ['Suggestion', 'Bug or problem', 'Praise', 'Other comment'], ph: 'Write your message here...', need: 'Please write a message before sending.', wa: 'WhatsApp opened with your message ready. Just tap send.', sending: 'Sending...', ok: 'Thank you! Your message was sent.', fail: 'We could not send it from here.', open: 'Open in your e-mail app' } }; function lang() { return document.body.dataset.lang === 'en' ? 'en' : 'pt'; } function fill() { var t = T[lang()], i = Math.max(sel.selectedIndex, 0); sel.innerHTML = ''; t.tipos.forEach(function (x) { var o = document.createElement('option'); o.textContent = x; sel.appendChild(o); }); sel.selectedIndex = i; ta.placeholder = t.ph; msg.textContent = ''; } fill(); document.querySelectorAll('.lang button').forEach(function (b) { b.addEventListener('click', fill); }); function data() { return { tipo: sel.value, mensagem: ta.value.trim(), nome: f.nome.value.trim(), email: f.email.value.trim(), honey: f._honey.value }; } function text(d) { return "[Hero's Shield Artwork HD] " + d.tipo + '\n\n' + d.mensagem + (d.nome ? '\n\n- ' + d.nome : '') + (d.email ? ' (' + d.email + ')' : ''); } f.addEventListener('click', function (e) { var b = e.target.closest('button'), via = b && b.dataset.via; if (!via) return; var d = data(), t = T[lang()]; if (d.honey) return; if (!d.mensagem) { msg.textContent = t.need; ta.focus(); return; } if (via === 'wa') { window.open('https://wa.me/' + WA + '?text=' + encodeURIComponent(text(d)), '_blank', 'noopener'); msg.textContent = t.wa; return; } var btns = f.querySelectorAll('button'); btns.forEach(function (x) { x.disabled = true; }); msg.textContent = t.sending; fetch('https://formsubmit.co/ajax/' + MAIL, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify({ _subject: "[Hero's Shield Artwork HD] " + d.tipo, _template: 'table', _captcha: 'false', assunto: d.tipo, mensagem: d.mensagem, nome: d.nome || '-', email: d.email || '-', pagina: location.href }) }).then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { if (!r.ok || String(j.success) === 'false') throw new Error('fail'); }); }).then(function () { msg.textContent = t.ok; ta.value = ''; }).catch(function () { var a = document.createElement('a'); a.href = 'mailto:' + MAIL + '?subject=' + encodeURIComponent("[Hero's Shield Artwork HD] " + d.tipo) + '&body=' + encodeURIComponent(text(d)); a.textContent = t.open; msg.textContent = t.fail + ' '; msg.appendChild(a); }).then(function () { btns.forEach(function (x) { x.disabled = false; }); }); }); })();</script></body>
+</html>
