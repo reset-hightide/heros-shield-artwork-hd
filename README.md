@@ -13,13 +13,10 @@
 
 **[🇧🇷 Português](#-português) · [🇺🇸 English](#-english)**
 
-| N64 original | Hero's Shield Artwork HD |
-|:-:|:-:|
-| <img src="docs/assets/cmp/shield_front_n64.jpg" width="300"> | <img src="docs/assets/cmp/shield_front_hd.jpg" width="300"> |
-| <img src="docs/assets/cmp/link_front_n64.jpg" width="300"> | <img src="docs/assets/cmp/link_front_hd.jpg" width="300"> |
-| <img src="docs/assets/cmp/sheath_n64.jpg" width="300"> | <img src="docs/assets/cmp/sheath_hd.jpg" width="300"> |
+<p align="center"><img src="docs/assets/cmp/comparacao_detalhe.jpg" alt="Hero's Shield N64, Artwork HD e Aftermath, de perto"></p>
+<p align="center"><img src="docs/assets/cmp/comparacao_torre.jpg" alt="Os três escudos junto à Torre do Relógio"></p>
 
-<p align="center"><i>Prints do jogo, mesma pose, com o cenário do MM-Reloaded · In-game, same pose, MM-Reloaded scenery · <a href="https://reset-hightide.github.io/heros-shield-artwork-hd/#compare">mais comparações / more comparisons</a></i></p>
+<p align="center"><i>Prints do jogo, mesma cena, sem HUD, com o cenário do MM-Reloaded. No N64 o Link e o escudo são os originais · In-game, same scene, no HUD, MM-Reloaded scenery. On N64, Link and the shield are the originals · <a href="https://reset-hightide.github.io/heros-shield-artwork-hd/#comparison">arraste e compare / drag to compare</a></i></p>
 
 ---
 
@@ -39,6 +36,7 @@ O Hylian Shield já ganhou versões 3D lindas em outros mods, como o Art Plus do
 | **02** | 🧝 **HW Young Link HD** | O Young Link de Hyrule Warriors do mod do **PxExYxTxOxN** para o Ship of Harkinian, portado para o Recomp. Usa o esqueleto e as animações do próprio jogo. |
 | **03** | ⚔️ **Equipamento do Art Plus** | Vem junto com o Link: a Kokiri Sword, cujo modelo também aparece na Razor Sword (a Razor equipada tem o mesmo visual da Kokiri), a bainha nas costas e a Ocarina of Time, com brilho de metal. Na defesa, a espada fica num ângulo que não atravessa o escudo. |
 | **04** | 🩸 **Hero's Shield Aftermath** | O mesmo escudo, gasto: cortes de lâmina no esmalte, a Triforce rachada e as costas marcadas. Veja a história abaixo. |
+| **05** | 🕰️ **Hero's Shield N64** | O escudo original do jogo, como no Nintendo 64, sem HD. Serve para comparar com os outros dois e continua igual mesmo com pacote de texturas HD. |
 
 Dá para usar só o escudo, só o Link ou tudo junto. A escolha é feita no menu do Player Model Manager, que abre com **L + A** no jogo.
 
@@ -76,8 +74,8 @@ curl -fsSL https://raw.githubusercontent.com/reset-hightide/heros-shield-artwork
 <summary><b>Instalação manual</b></summary>
 
 1. Baixe na Thunderstore e instale estes mods, que o escudo e o Link precisam: [Player Model Manager](https://thunderstore.io/c/zelda-64-recompiled/p/YAZMT/Player_Model_Manager/), [Global Objects](https://thunderstore.io/c/zelda-64-recompiled/p/YAZMT/Global_Objects/), [YAZMT Core](https://thunderstore.io/c/zelda-64-recompiled/p/YAZMT/YAZMT_Core/) e [Recomp External Python](https://thunderstore.io/c/zelda-64-recompiled/p/LT_Schmiddy/RecompExternalPython_for_Zelda64Recompiled/). Os três últimos são o que o Player Model Manager pede.
-2. Abra o jogo, vá em **Mods → Install Mods** e escolha os arquivos `.nrm` e `.rtz`, os desses mods e os da pasta [`mods/`](mods). Também dá para copiar todos para a pasta que abre em **Mods → Open Mods Folder**.
-3. No jogo, aperte **L + A**. Em **Hero's Shield**, escolha **Hero's Shield Artwork HD** (ou **Hero's Shield Aftermath**). Em **Human**, escolha **HW Young Link HD (Art Plus gear)**.
+2. Abra o jogo, vá em **Mods → Install Mods** e escolha os arquivos `.nrm` (o mod, com o modelo 3D) e `.rtz` (o pacote de texturas, as cores). Os dois do mesmo escudo andam juntos. Escolha os desses mods e os da pasta [`mods/`](mods). Também dá para copiar todos para a pasta que abre em **Mods → Open Mods Folder**.
+3. No jogo, aperte **L + A**. Em **Hero's Shield**, escolha **Hero's Shield Artwork HD** (ou **Hero's Shield Aftermath** ou **Hero's Shield N64**). Em **Human**, escolha **HW Young Link HD (Art Plus gear)**.
 </details>
 
 **Dica:** com o [MM-Reloaded](https://github.com/GhostlyDark/MM-Reloaded) o resto do jogo também fica em HD. As comparações acima foram tiradas com ele.
@@ -98,6 +96,7 @@ The Hylian Shield has already had beautiful 3D remakes in other mods, like Skila
 | **02** | 🧝 **HW Young Link HD** | The Hyrule Warriors Young Link from **PxExYxTxOxN**'s Ship of Harkinian mod, ported to the Recomp. It uses the game's own skeleton and animations. |
 | **03** | ⚔️ **Art Plus gear** | Comes with Link: the Kokiri Sword, whose model also shows up on the Razor Sword (an equipped Razor looks the same as the Kokiri), the sheath on his back and the Ocarina of Time, with a metal shine. When defending, the sword is angled so it doesn't go through the shield. |
 | **04** | 🩸 **Hero's Shield Aftermath** | The same shield, worn down: blade cuts in the enamel, a cracked Triforce and a scarred back. See the story below. |
+| **05** | 🕰️ **Hero's Shield N64** | The game's original shield, as on the Nintendo 64, no HD. Meant for comparing with the other two, and it stays the same even with an HD texture pack. |
 
 You can use just the shield, just Link, or everything. You pick them in the Player Model Manager menu, opened in game with **L + A**.
 
@@ -135,8 +134,8 @@ curl -fsSL https://raw.githubusercontent.com/reset-hightide/heros-shield-artwork
 <summary><b>Manual install</b></summary>
 
 1. Download these mods from Thunderstore, the shield and Link need them: [Player Model Manager](https://thunderstore.io/c/zelda-64-recompiled/p/YAZMT/Player_Model_Manager/), [Global Objects](https://thunderstore.io/c/zelda-64-recompiled/p/YAZMT/Global_Objects/), [YAZMT Core](https://thunderstore.io/c/zelda-64-recompiled/p/YAZMT/YAZMT_Core/) and [Recomp External Python](https://thunderstore.io/c/zelda-64-recompiled/p/LT_Schmiddy/RecompExternalPython_for_Zelda64Recompiled/). The last three are what Player Model Manager requires.
-2. Start the game, go to **Mods → Install Mods** and pick the `.nrm` and `.rtz` files, both from those mods and from the [`mods/`](mods) folder. You can also copy them all into the folder that **Mods → Open Mods Folder** opens.
-3. In game, press **L + A**. Under **Hero's Shield**, pick **Hero's Shield Artwork HD** (or **Hero's Shield Aftermath**). Under **Human**, pick **HW Young Link HD (Art Plus gear)**.
+2. Start the game, go to **Mods → Install Mods** and pick the `.nrm` (the mod, with the 3D model) and `.rtz` (the texture pack, the colours) files. The two files of the same shield go together. Pick the ones from those mods and from the [`mods/`](mods) folder. You can also copy them all into the folder that **Mods → Open Mods Folder** opens.
+3. In game, press **L + A**. Under **Hero's Shield**, pick **Hero's Shield Artwork HD** (or **Hero's Shield Aftermath** or **Hero's Shield N64**). Under **Human**, pick **HW Young Link HD (Art Plus gear)**.
 </details>
 
 **Tip:** with [MM-Reloaded](https://github.com/GhostlyDark/MM-Reloaded) the rest of the game is in HD too. The comparisons above were taken with it.
