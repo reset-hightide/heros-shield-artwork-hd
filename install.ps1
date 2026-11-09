@@ -11,7 +11,7 @@ $ProgressPreference = 'SilentlyContinue'
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 $RepoRaw = 'https://raw.githubusercontent.com/reset-hightide/heros-shield-artwork-hd/main'
-$OurFiles = @('hwmm_young_link_hd.nrm', 'hwmm_young_link_hd_textures.rtz', 'hwmm_heros_shield_hd.nrm', 'hwmm_heros_shield_hd_textures.rtz', 'hwmm_heros_shield_aftermath_heavy.nrm', 'hwmm_heros_shield_aftermath_heavy_textures.rtz', 'hwmm_heros_shield_n64.nrm')
+$OurFiles = @('hwmm_young_link_hd.nrm', 'hwmm_young_link_hd_textures.rtz', 'hwmm_heros_shield_hd.nrm', 'hwmm_heros_shield_hd_textures.rtz', 'hwmm_heros_shield_aftermatch_heavy.nrm', 'hwmm_heros_shield_aftermatch_heavy_textures.rtz', 'hwmm_heros_shield_n64.nrm')
 # Thunderstore packages: namespace, name, version, file that tells us it is already installed
 $Deps = @(
     @('YAZMT', 'YAZMT_Core', '0.1.1', 'yazmt_mm_corelib.nrm'),
@@ -51,7 +51,7 @@ if (Get-Process -Name 'Zelda64Recompiled' -ErrorAction SilentlyContinue) {
 $Tmp = Join-Path ([IO.Path]::GetTempPath()) ('heros-shield-artwork-' + [Guid]::NewGuid())
 New-Item -ItemType Directory -Force -Path $Tmp | Out-Null
 try {
-    # 0. older versions of the Aftermath shield used another file name: remove them so the menu has no duplicate
+    # 0. older versions of the Aftermatch shield used another file name: remove them so the menu has no duplicate
     Get-ChildItem -Path $Mods -Filter 'hwmm_heros_shield_after*' -ErrorAction SilentlyContinue |
         Where-Object { $OurFiles -notcontains $_.Name } | Remove-Item -Force -ErrorAction SilentlyContinue
 
