@@ -10,7 +10,7 @@
 set -eu
 
 REPO_RAW="https://raw.githubusercontent.com/reset-hightide/heros-shield-artwork-hd/main"
-OUR_FILES="hwmm_young_link_hd.nrm hwmm_young_link_hd_textures.rtz hwmm_heros_shield_hd.nrm hwmm_heros_shield_hd_textures.rtz hwmm_heros_shield_aftermatch_heavy.nrm hwmm_heros_shield_aftermatch_heavy_textures.rtz hwmm_heros_shield_n64.nrm"
+OUR_FILES="hwmm_young_link_hd.nrm hwmm_young_link_hd_textures.rtz hwmm_heros_shield_hd.nrm hwmm_heros_shield_hd_textures.rtz hwmm_heros_shield_aftermath_heavy.nrm hwmm_heros_shield_aftermath_heavy_textures.rtz hwmm_heros_shield_n64.nrm"
 # Thunderstore packages: namespace/name/version/file that tells us it is already installed
 DEPS="YAZMT/YAZMT_Core/0.1.1/yazmt_mm_corelib.nrm
 YAZMT/Global_Objects/0.1.1/yazmt_mm_global_objects.nrm
@@ -55,6 +55,12 @@ fi
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
 fetch() { curl -fsSL --retry 3 -o "$2" "$1" || fail "download falhou / download failed: $1"; }
+
+# 0. older versions of the Aftermath shield used another file name: remove them so the menu has no duplicate
+for old in "$MODS"/hwmm_heros_shield_after*; do
+    [ -f "$old" ] || continue
+    case " $OUR_FILES " in *" ${old##*/} "*) ;; *) rm -f "$old" ;; esac
+done
 
 # 1. our mods: from the mods/ folder next to this script (release zip), or from GitHub
 HERE="$(cd "$(dirname "$0")" 2>/dev/null && pwd || echo .)"
